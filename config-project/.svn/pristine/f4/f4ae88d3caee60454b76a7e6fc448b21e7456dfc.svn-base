@@ -1,0 +1,8 @@
+zuul:
+    routes:
+        testRoute:
+            path: /routeTest
+            url: http://www.baidu.com
+test:
+    user:
+        name: rainbow.test.zuul

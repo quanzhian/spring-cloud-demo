@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.rjhy.cloud</groupId>
+  <artifactId>maven-parent</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  
+  	<!-- 配置聚合 -->
+	<modules>
+		<!-- 指定各个子工程的相对路径 -->
+		<module>../eureka-bus</module>
+		<module>../eureka-config-client</module>
+		<module>../eureka-config-server</module>
+		<module>../eureka-server</module>
+		<module>../eureka-zuul</module>
+	</modules>
+	
+  	<!-- 配置依赖的管理 -->
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>4.9</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>Dalston.SR1</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>				
+	</dependencyManagement>
+</project>

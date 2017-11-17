@@ -1,0 +1,18 @@
+#server:          #如果使用控制台输入来指定启动端口号，
+#  port: 8082     #则注掉server.port
+management:
+  security:
+    enabled: false
+spring:
+  application:
+    name: eureka-config-provider
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: eureka-config-server
+      profile: dev   # eureka-config-provider-dev.yml
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
