@@ -12,11 +12,22 @@ public class ProviderController {
 
 	@RequestMapping(value = "/call/{id}", method = RequestMethod.GET, 
 			produces = MediaType.APPLICATION_JSON_VALUE)
-	public ProviderBean call(@PathVariable Integer id, HttpServletRequest request) {
-		ProviderBean p = new ProviderBean();
+	public Member call(@PathVariable Integer id, HttpServletRequest request) {
+		Member p = new Member();
 		p.setId(id);
 		p.setName("angus");
 		p.setMessage(request.getRequestURL().toString());
 		return p;
+	}
+	
+	@RequestMapping(value = "/hello", method = RequestMethod.GET)
+	public String hello() {
+		return "hello";
+	}
+	
+	@RequestMapping(value = "/toHello", method = RequestMethod.GET)
+	public String toHello() throws Exception {
+		//Thread.sleep(1000);
+		return "timeout hello";
 	}
 }

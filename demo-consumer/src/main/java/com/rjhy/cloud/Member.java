@@ -1,6 +1,6 @@
 package com.rjhy.cloud;
 
-public class ProviderBean {
+public class Member {
 
 	private Integer id;
 	private String name;

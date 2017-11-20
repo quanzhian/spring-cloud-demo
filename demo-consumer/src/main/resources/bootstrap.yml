@@ -12,6 +12,18 @@ spring:
         enabled: true
         service-id: eureka-config-server
       profile: dev   # eureka-config-consumer-dev.yml
+feign:
+  hystrix:
+    enabled: true
+hystrix:
+  command:
+    default:  # HFClient#toHello():
+      execution:
+        isolation:
+          thread: 
+            timeoutInMilliseconds: 500
+      circuitBreaker:
+        requestVolumeThreshold: 10   # 默认 20
 eureka:
   client:
     serviceUrl:
