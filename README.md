@@ -5,7 +5,7 @@ spring-cloud-demo 项目致力于搭建一个通用的 spring-cloud 分布式微
 
 ## 项目采用的架构
 
-项目采用SVN + Spring-cloud-eureka + spring-cloud-config + spring-cloud-zuul + spring-cloud-bus + spring-cloud-hystrix + spring-cloud-ribbon + spring-cloud-feign
+项目采用 Maven + SVN + Spring-cloud-eureka + spring-cloud-config + spring-cloud-zuul + spring-cloud-bus + spring-cloud-hystrix + spring-cloud-ribbon + spring-cloud-feign
 
 ## 项目运行环境
 
