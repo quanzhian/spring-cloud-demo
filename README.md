@@ -14,10 +14,12 @@ spring-cloud-demo 项目致力于搭建一个通用的 spring-cloud 分布式微
 * SVN客户端，如Tortoise SVN  https://tortoisesvn.net/downloads.html
 * Maven 版本管理
 * RaibbtMQ http://www.rabbitmq.com/download.html
+* Consul https://www.consul.io/downloads.html
 
 ## 项目启动方法
 
 需要先安装SVN服务并创建config-project库，然后用SVN客户端将创建本项目中config-project文件夹内的内容复提交到config-project库中。
+然后，运行 Consul.exe程序。
 然后，项目中的各个Java工程都由各自工程中主类的main方法启动，启动顺序如下：
 * eureka-server 访问地址：http://localhost:8761/
 * eureka-config-server 
