@@ -1,0 +1,8 @@
+zuul:
+    routes:
+        testRoute:
+            path: /routeTest
+            serviceId: eureka-config-provider
+test:
+    user:
+        name: rainbow.test.zuul3

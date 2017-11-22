@@ -18,6 +18,8 @@
 		<module>../demo-consumer</module>
 		<module>../hystrix-dashboard</module>
 		<module>../hystrix-turbine</module>
+		<module>../sleuth-server</module>
+		<module>../consul-server</module>
 	</modules>
 
 	<parent>

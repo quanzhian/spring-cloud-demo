@@ -5,7 +5,7 @@ spring-cloud-demo 项目致力于搭建一个通用的 spring-cloud 分布式微
 
 ## 项目采用的架构
 
-项目采用 Maven + SVN + Spring-cloud-eureka + spring-cloud-config + spring-cloud-zuul + spring-cloud-bus + spring-cloud-hystrix + spring-cloud-ribbon + spring-cloud-feign
+项目采用 Maven + SVN + Spring-cloud-eureka + spring-cloud-config + spring-cloud-zuul + spring-cloud-bus + spring-cloud-hystrix + spring-cloud-ribbon + spring-cloud-feign + spirng-cloud-sleuth + consul 
 
 ## 项目运行环境
 
@@ -28,6 +28,8 @@ spring-cloud-demo 项目致力于搭建一个通用的 spring-cloud 分布式微
 * eureka-config-client 访问地址：http://localhost:8081/gp
 * demo-provider 启动时再控制台输入启动端口号，如8086、8087、8088，这样可以同时启动多个实例以测试负载均衡，访问地址：http://localhost:8086/call/1
 * demo-consumer 访问地址：http://localhost:8083/hello
+* sleuth-server 访问地址：http://localhost:9411/
+* consul-server 访问地址：http://localhost:8500/
 
 ## 项目各个java工程解释
 

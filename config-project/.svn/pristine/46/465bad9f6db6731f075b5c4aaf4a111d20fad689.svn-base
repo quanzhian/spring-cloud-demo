@@ -1,0 +1,11 @@
+zuul:
+    routes:
+        testRoute:
+            path: /routeTest
+            url: http://www.163.com
+        api-a:
+            path: /user-api/**
+            serviceId: eureka-config-provider
+test:
+    user:
+        name: rainbow.test.zuul3
