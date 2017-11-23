@@ -32,6 +32,7 @@ spring-cloud-demo 项目致力于搭建一个通用的 spring-cloud 分布式微
 * demo-consumer 访问地址：http://localhost:8083/hello
 * sleuth-server 访问地址：http://localhost:9411/
 * consul-server 访问地址：http://localhost:8500/
+* security-oauth2 可单独启动
 
 ## 项目各个java工程解释
 
