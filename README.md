@@ -5,7 +5,7 @@ spring-cloud-demo 项目致力于搭建一个通用的 spring-cloud 分布式微
 
 ## 项目采用的架构
 
-项目采用 Maven + SVN + Spring-cloud-eureka + spring-cloud-config + spring-cloud-zuul + spring-cloud-bus + spring-cloud-hystrix + spring-cloud-ribbon + spring-cloud-feign + spirng-cloud-sleuth + consul 
+项目采用 Maven + SVN + Spring-cloud-eureka + spring-cloud-config + spring-cloud-zuul + spring-cloud-bus + spring-cloud-hystrix + spring-cloud-ribbon + spring-cloud-feign + spirng-cloud-sleuth + consul +spring session
 
 ## 项目运行环境
 
@@ -15,6 +15,7 @@ spring-cloud-demo 项目致力于搭建一个通用的 spring-cloud 分布式微
 * Maven 版本管理
 * RaibbtMQ http://www.rabbitmq.com/download.html
 * Consul https://www.consul.io/downloads.html
+* redis 可下载Windows版本 https://www.cnblogs.com/M-LittleBird/p/5902850.html
 
 ## 项目启动方法
 
@@ -33,7 +34,8 @@ spring-cloud-demo 项目致力于搭建一个通用的 spring-cloud 分布式微
 * sleuth-server 访问地址：http://localhost:9411/
 * consul-server 访问地址：http://localhost:8500/
 * security-oauth2 可单独启动
-
+* security-session 可单独启动
+* 
 ## 项目各个java工程解释
 
 没时间解释了，快上车！
