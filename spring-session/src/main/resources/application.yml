@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: spring-session
+  redis:
+    host: localhost
+    password:
+    port: 6379
