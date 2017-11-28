@@ -35,7 +35,7 @@ spring-cloud-demo 项目致力于搭建一个通用的 spring-cloud 分布式微
 * consul-server 访问地址：http://localhost:8500/
 * security-oauth2 可单独启动
 * security-session 可单独启动
-* 
+
 ## 项目各个java工程解释
 
 没时间解释了，快上车！
